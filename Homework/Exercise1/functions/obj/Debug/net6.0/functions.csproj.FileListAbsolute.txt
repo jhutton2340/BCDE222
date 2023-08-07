@@ -1,0 +1,15 @@
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\obj\Debug\net6.0\functions.csproj.AssemblyReference.cache
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\obj\Debug\net6.0\functions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\obj\Debug\net6.0\functions.AssemblyInfoInputs.cache
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\obj\Debug\net6.0\functions.AssemblyInfo.cs
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\obj\Debug\net6.0\functions.csproj.CoreCompileInputs.cache
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\bin\Debug\net6.0\functions.exe
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\bin\Debug\net6.0\functions.deps.json
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\bin\Debug\net6.0\functions.runtimeconfig.json
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\bin\Debug\net6.0\functions.dll
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\bin\Debug\net6.0\functions.pdb
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\obj\Debug\net6.0\functions.dll
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\obj\Debug\net6.0\refint\functions.dll
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\obj\Debug\net6.0\functions.pdb
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\obj\Debug\net6.0\functions.genruntimeconfig.cache
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\projects\functions\functions\obj\Debug\net6.0\ref\functions.dll
