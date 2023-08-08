@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace Exercise4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           new SumAndAverageController(new SumAndAverageRange(), new ConsoleView()).Go();
+        }
+    }
+}
