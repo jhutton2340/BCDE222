@@ -24,7 +24,7 @@ namespace Exercise4
         {
             
             _numberOne = _sumAndAverageRange.CalculateSum();
-            _view.DisplayOutput($"the sum of all odd numbers between 1 and 100 are {_numberOne}");
+            _view.DisplayOutput($"the sum of all numbers divisable by 7 between 1 and 100 are {_numberOne}");
             _view.DisplayOutput($"the average of numbers 1 to 100 are {_sumAndAverageRange.AverageNumber()}");
             
             

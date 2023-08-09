@@ -13,10 +13,15 @@ namespace Exercise4
 
         public int CalculateSum()
         {
-            for (int i = 1; i <= 100; i += 2)
+            for (int i = 0; i <= 101; i++)
             {
-                _numberToSum += i;
-                _count++;
+                if(i % 7 == 0)
+                {
+                    _numberToSum += i;
+                    _count++;
+                }
+                
+                
             }
 
             return _numberToSum;
