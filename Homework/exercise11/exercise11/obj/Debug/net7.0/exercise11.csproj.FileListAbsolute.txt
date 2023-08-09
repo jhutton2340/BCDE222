@@ -1,0 +1,15 @@
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\bin\Debug\net7.0\exercise11.exe
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\bin\Debug\net7.0\exercise11.deps.json
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\bin\Debug\net7.0\exercise11.runtimeconfig.json
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\bin\Debug\net7.0\exercise11.dll
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\bin\Debug\net7.0\exercise11.pdb
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\obj\Debug\net7.0\exercise11.csproj.AssemblyReference.cache
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\obj\Debug\net7.0\exercise11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\obj\Debug\net7.0\exercise11.AssemblyInfoInputs.cache
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\obj\Debug\net7.0\exercise11.AssemblyInfo.cs
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\obj\Debug\net7.0\exercise11.csproj.CoreCompileInputs.cache
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\obj\Debug\net7.0\exercise11.dll
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\obj\Debug\net7.0\refint\exercise11.dll
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\obj\Debug\net7.0\exercise11.pdb
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\obj\Debug\net7.0\exercise11.genruntimeconfig.cache
+C:\Users\Jhutt\Ara One Drive\OneDrive - Ara Institute of Canterbury\Year 3\Semester 1\BCDE222 C#\BCDE222\Homework\exercise11\exercise11\obj\Debug\net7.0\ref\exercise11.dll
