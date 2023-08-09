@@ -12,9 +12,11 @@ namespace Exercise4
 
         public int CalculateSum()
         {
-            for(int i = 0; i < 101; i++)
+            int i = 0;
+            while(i < 101)
             {
                 _numberToSum += i;
+                i++;
             }
             return _numberToSum;
         }
