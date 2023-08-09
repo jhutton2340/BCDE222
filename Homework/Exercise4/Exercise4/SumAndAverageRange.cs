@@ -13,11 +13,11 @@ namespace Exercise4
         public int CalculateSum()
         {
             int i = 0;
-            while(i < 101)
+            do
             {
                 _numberToSum += i;
                 i++;
-            }
+            }while (i <= 100);
             return _numberToSum;
         }
 
