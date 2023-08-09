@@ -9,34 +9,22 @@ namespace Exercise4
     class SumAndAverageRange
     {
         protected int _numberToSum;
-        protected int _count;
-        public int[] CalculateSum()
+        protected double _count;
+
+        public int CalculateSum()
         {
-            int i = 111;
-            
-            do
+            for (int i = 1; i <= 100; i += 2)
             {
                 _numberToSum += i;
-                _count += + 1;
-                
-                i++;
+                _count++;
+            }
 
+            return _numberToSum;
 
-            } while (i <= 8990);
-            int[] sumAndCount = new int[2];
-            sumAndCount[1] = _numberToSum;
-            sumAndCount[0] = _count;
-            _numberToSum = 0;
-            _count = 0;
-            return sumAndCount;
-            
         }
-
-
-
         public double AverageNumber()
         {
-            return (double)_numberToSum / 100;
+            return (double)_numberToSum / _count;
         }
     }
 }
