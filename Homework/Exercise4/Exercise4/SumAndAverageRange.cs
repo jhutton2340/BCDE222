@@ -13,13 +13,15 @@ namespace Exercise4
 
         public int CalculateSum()
         {
-            for (int i = 0; i <= 101; i++)
+            for (int i = 1; i <= 100; i++)
             {
-                if(i % 7 == 0)
-                {
-                    _numberToSum += i;
-                    _count++;
-                }
+                _numberToSum += i * i;
+
+                //if(i % 7 == 0)
+                //{
+                //    _numberToSum += i;
+                //    _count++;
+                //}
                 
                 
             }
@@ -29,7 +31,7 @@ namespace Exercise4
         }
         public double AverageNumber()
         {
-            return (double)_numberToSum / _count;
+            return (double)_numberToSum / 100;
         }
     }
 }
