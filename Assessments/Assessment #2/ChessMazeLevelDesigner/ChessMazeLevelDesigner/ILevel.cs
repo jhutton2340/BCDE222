@@ -1,10 +1,10 @@
 ﻿using FilerNS;
 
-namespace LevelDesignNS
+namespace ChessMazeLevelDesigner
 {
     public interface ILevel
     {
-        void CreateLevel(int width, int height);
+        void CreateLevel(string name, int width, int height);
         int GetLevelWidth();
         int GetLevelHeight();
 		void AddEmpty(int gridX, int gridY);
