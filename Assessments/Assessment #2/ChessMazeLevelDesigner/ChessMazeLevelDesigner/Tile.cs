@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChessMazeLevelDesigner;
 
-internal class Tile : Piece
+   public class Tile 
 {
     
 }

@@ -29,6 +29,7 @@ public class LevelEditor : ILevel
         else
         {
             CurrentLevel = new Level(name, width, height);
+            CurrentLevel.InitializeBoard();
         }
     }
 
@@ -49,47 +50,47 @@ public class LevelEditor : ILevel
 
     public void AddKing(int gridX, int gridY)
     {
-        throw new NotImplementedException();
+        CurrentLevel.CurrentBoard.AddTile(gridX, gridY, (int)Part.King);
     }
 
     public void AddRook(int gridX, int gridY)
     {
-        throw new NotImplementedException();
+        CurrentLevel.CurrentBoard.AddTile(gridX, gridY, (int)Part.Rook);
     }
 
     public void AddBishop(int gridX, int gridY)
     {
-        throw new NotImplementedException();
+       CurrentLevel.CurrentBoard.AddTile(gridX, gridY, (int)Part.Bishop);
     }
 
     public void AddKnight(int gridX, int gridY)
     {
-        throw new NotImplementedException();
+        CurrentLevel.CurrentBoard.AddTile(gridX, gridY, (int)Part.Knight);
     }
 
     public void AddPlayerOnEmpty(int gridX, int gridY)
     {
-        throw new NotImplementedException();
+        CurrentLevel.CurrentBoard.AddTile(gridX, gridY, (int)Part.PlayerOnEmpty);
     }
 
     public void AddPlayerOnKing(int gridX, int gridY)
     {
-        throw new NotImplementedException();
+        CurrentLevel.CurrentBoard.AddTile(gridX, gridY, (int)Part.PlayerOnKing);
     }
 
     public void AddPlayerOnRook(int gridX, int gridY)
     {
-        throw new NotImplementedException();
+        CurrentLevel.CurrentBoard.AddTile(gridX, gridY, (int)Part.PlayerOnRook);
     }
 
     public void AddPlayerOnBishop(int gridX, int gridY)
     {
-        throw new NotImplementedException();
+        CurrentLevel.CurrentBoard.AddTile(gridX, gridY, (int)Part.PlayerOnBishop);
     }
 
     public void AddPlayerOnKnight(int gridX, int gridY)
     {
-        throw new NotImplementedException();
+        CurrentLevel.CurrentBoard.AddTile(gridX, gridY, (int)Part.PlayerOnKnight);
     }
 
     public Part GetPartAtIndex(int gridX, int gridY)
@@ -105,6 +106,11 @@ public class LevelEditor : ILevel
     public bool CheckValid()
     {
         throw new NotImplementedException();
+    }
+
+    public void ChangeLevelName(string name)
+    {
+        CurrentLevel.Name = name;
     }
 }
 

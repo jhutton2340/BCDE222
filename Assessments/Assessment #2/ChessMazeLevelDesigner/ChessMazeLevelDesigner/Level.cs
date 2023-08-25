@@ -48,9 +48,17 @@ public class Level
     }
 
     
-
+    public void InitializeBoard()
+    {
+        for (int row = 0; i < Width; i++)
+        {
+            for (int column = 0; j < Height; j++)
+            {
+                _currentBoard.AddTile(row, column, (int)Part.Empty);
+            }
+        }
+    }
   
 }
 
 
-// levelEditor => level => board => tile 
