@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -38,8 +39,13 @@ public class Board
         _currentTiles = new Tile[width, height];
     }
 
-    public void AddTile(int gridX, int gridY, int part)
+    public void AddTile(int gridX, int gridY, Tile tile )
     {
-        CurrentTiles[gridX, gridY] = (int)Part.part;
+        CurrentTiles[gridX, gridY] = tile;
+    }
+
+    public Part GetTile(int gridX, int gridY)
+    {
+        return CurrentTiles[gridX, gridY].CurrentPart;
     }
 }

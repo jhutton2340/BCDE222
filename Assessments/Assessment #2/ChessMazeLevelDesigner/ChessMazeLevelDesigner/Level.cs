@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LevelDesignNS;
 
-public class Level 
+public class Level : LevelEditor
 {
     private string _name;
     private int _width;
@@ -50,11 +50,11 @@ public class Level
     
     public void InitializeBoard()
     {
-        for (int row = 0; i < Width; i++)
+        for (int row = 0; row < Width; row++)
         {
-            for (int column = 0; j < Height; j++)
+            for (int column = 0; column < Height; column++)
             {
-                _currentBoard.AddTile(row, column, (int)Part.Empty);
+                CurrentBoard.AddTile(row, column, CreateTile(Part.Empty, PartColour.Null));
             }
         }
     }
