@@ -1,4 +1,4 @@
-﻿namespace FilerNS
+﻿namespace ChessMazeLevelDesigner
 {
     public interface ISaver
     {

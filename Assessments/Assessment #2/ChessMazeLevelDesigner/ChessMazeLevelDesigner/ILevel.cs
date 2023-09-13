@@ -1,4 +1,4 @@
-﻿using FilerNS;
+﻿using System;
 
 namespace ChessMazeLevelDesigner
 {
