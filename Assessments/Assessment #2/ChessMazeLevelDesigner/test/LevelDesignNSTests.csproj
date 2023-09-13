@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ChessMazeLevelDesigner\ChessMazeLevelDesigner.csproj" />
+    <ProjectReference Include="..\ChessMazeLevelDesigner\LevelDesignNS.csproj" />
   </ItemGroup>
 
 </Project>

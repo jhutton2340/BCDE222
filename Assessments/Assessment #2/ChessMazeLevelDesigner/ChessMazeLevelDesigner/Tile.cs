@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChessMazeLevelDesigner
+namespace LevelDesignNS
 {
-    public class Tile
+    public class Tile 
     {
         private Part _part = Part.Empty;
         private PartColour _colour;
@@ -24,7 +24,7 @@ namespace ChessMazeLevelDesigner
             get { return _colour; }
             set { _colour = value; }
         }
-    
+
         public bool IsStart
         {
             get { return _isStart; }

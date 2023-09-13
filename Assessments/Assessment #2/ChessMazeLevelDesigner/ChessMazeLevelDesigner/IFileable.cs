@@ -1,6 +1,4 @@
-﻿
-
-namespace ChessMazeLevelDesigner
+﻿namespace LevelDesignNS
 {
     public interface IFileable
     {

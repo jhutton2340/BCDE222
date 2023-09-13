@@ -1,4 +1,4 @@
-﻿using ChessMazeLevelDesigner;
+﻿using LevelDesignNS;
 using System.Security.Cryptography.X509Certificates;
 
 namespace test
@@ -179,18 +179,6 @@ namespace test
             Assert.AreEqual(Part.PlayerOnEmpty, le.GetPartAtIndex(0, 0));
             Assert.AreEqual(PartColour.Null, le.GetPartColourAtIndex(0, 0));
         }
-        
-        [TestMethod]
-        // Tests if the AddPlayerOnEmpty method works when a colour is included
-        public void TestMethod15()
-        {
-            var le = new LevelEditor();
-            le.CreateLevel("Test", 5, 5);
-            le.AddPlayerOnEmpty(0, 0, PartColour.Black);
-
-            Assert.AreEqual(Part.PlayerOnEmpty, le.GetPartAtIndex(0, 0));
-            Assert.AreEqual(PartColour.Black, le.GetPartColourAtIndex(0, 0));
-        }
 
         [TestMethod]
         // Tests if an exemption is returned when the x and y coordinates are out of bounds for AddPlayerOnKing
@@ -216,19 +204,21 @@ namespace test
             Assert.AreEqual(Part.PlayerOnKing, le.GetPartAtIndex(0, 0));
             Assert.AreEqual(PartColour.Null, le.GetPartColourAtIndex(0, 0));
         }
-        
+
         [TestMethod]
-        // Tests if the AddPlayerOnKing method works when a colour is included
+        // Tests if the colour is added to PlayerOnKing when getting the colour from the existing Tile
         public void TestMethod18()
         {
             var le = new LevelEditor();
             le.CreateLevel("Test", 5, 5);
-            le.AddPlayerOnKing(0, 0, PartColour.Black);
+            le.AddKing(0, 0, PartColour.Black);
+            le.AddPlayerOnKing(0, 0);
 
             Assert.AreEqual(Part.PlayerOnKing, le.GetPartAtIndex(0, 0));
             Assert.AreEqual(PartColour.Black, le.GetPartColourAtIndex(0, 0));
         }
-        
+
+
         [TestMethod]
         // Tests if an exemption is returned when the x and y coordinates are out of bounds for AddPlayerOnRook
         public void TestMethod19()
@@ -253,18 +243,20 @@ namespace test
             Assert.AreEqual(Part.PlayerOnRook, le.GetPartAtIndex(0, 0));
             Assert.AreEqual(PartColour.Null, le.GetPartColourAtIndex(0, 0));
         }
-        
+
         [TestMethod]
-        // Tests if the AddPlayerOnRook method works when a colour is included
+        //Tests if the colour is added to playerOnRook when getting the colour from the existing tile
         public void TestMethod21()
         {
             var le = new LevelEditor();
             le.CreateLevel("Test", 5, 5);
-            le.AddPlayerOnRook(0, 0, PartColour.Black);
+            le.AddRook(0, 0, PartColour.Black);
+            le.AddPlayerOnRook(0, 0);
 
             Assert.AreEqual(Part.PlayerOnRook, le.GetPartAtIndex(0, 0));
             Assert.AreEqual(PartColour.Black, le.GetPartColourAtIndex(0, 0));
         }
+
         
         [TestMethod]
         // Tests if an exemption is returned when the x and y coordinates are out of bounds for AddPlayerOnKnight
@@ -290,14 +282,15 @@ namespace test
             Assert.AreEqual(Part.PlayerOnKnight, le.GetPartAtIndex(0, 0));
             Assert.AreEqual(PartColour.Null, le.GetPartColourAtIndex(0, 0));
         }
-        
+
         [TestMethod]
-        // Tests if the AddPlayerOnKnight method works when a colour is included
+        // Tests if the colour is added to PlayerOnKnight when getting the colour from the existing Tile
         public void TestMethod24()
         {
             var le = new LevelEditor();
             le.CreateLevel("Test", 5, 5);
-            le.AddPlayerOnKnight(0, 0, PartColour.Black);
+            le.AddKnight(0, 0, PartColour.Black);
+            le.AddPlayerOnKnight(0, 0);
 
             Assert.AreEqual(Part.PlayerOnKnight, le.GetPartAtIndex(0, 0));
             Assert.AreEqual(PartColour.Black, le.GetPartColourAtIndex(0, 0));
@@ -327,18 +320,18 @@ namespace test
             Assert.AreEqual(Part.PlayerOnBishop, le.GetPartAtIndex(0, 0));
             Assert.AreEqual(PartColour.Null, le.GetPartColourAtIndex(0, 0));
         }
-        
+
         [TestMethod]
-        // Tests if the AddPlayerOnBishop method works when a colour is included
+        // Tests if the colour is added to PlayerOnBishop when getting the colour from the existing Tile
         public void TestMethod27()
         {
             var le = new LevelEditor();
             le.CreateLevel("Test", 5, 5);
-            le.AddPlayerOnBishop(0, 0, PartColour.Black);
+            le.AddBishop(0, 0, PartColour.Black);
+            le.AddPlayerOnBishop(0, 0);
 
             Assert.AreEqual(Part.PlayerOnBishop, le.GetPartAtIndex(0, 0));
             Assert.AreEqual(PartColour.Black, le.GetPartColourAtIndex(0, 0));
         }
-
     }
 }

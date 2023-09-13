@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="LevelDesignNS.Board">
+    <Position X="8.25" Y="5.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAABACAAAAAgAAAAEBAABIAACBBAAIAAAEAAAA=</HashCode>
+      <FileName>Board.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelDesignNS.Level">
+    <Position X="4.75" Y="5.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEIAAABADAAgAAAAAAAEQAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Level.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelDesignNS.LevelEditor">
+    <Position X="0.5" Y="5.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AUAAQAAIACEAgABhAAAAAEgYAAEFAAgAEABAAEAAQQA=</HashCode>
+      <FileName>LevelEditor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LevelDesignNS.Program">
+    <Position X="6.25" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelDesignNS.Tile">
+    <Position X="9.25" Y="10.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAQIAAAgAAAAAAAAAAAAAgAAAAAAAggAAgAA=</HashCode>
+      <FileName>Tile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="LevelDesignNS.IFileable">
+    <Position X="4.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAABAABAAAAAAAA=</HashCode>
+      <FileName>IFileable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LevelDesignNS.ISaver">
+    <Position X="7.25" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISaver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LevelDesignNS.ILevel">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AUAAAAAIACEAgABgAAAAAAAIAAABAAgAEAAAAEAAQQA=</HashCode>
+      <FileName>ILevel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

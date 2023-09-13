@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qbGFsLU0/JWcxHHOz+TRtpL3l14VEPOonlI79iJW9KPgDYwIRsvXuVWm+c6XkCGYD2jP8tkD+ebOL0sG72ITwA==",
+  "dgSpecHash": "gLrJroTtXq7Uw5djHlrLb7iC4kZIAB4Gt64myKX1U9mGjJbmCO9U84BaC2fqqFirSi2TGBne6KYIpMnds7Gcjw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jhutt\\Ara One Drive\\OneDrive - Ara Institute of Canterbury\\Year 3\\Semester 1\\BCDE222 C#\\BCDE222\\Assessments\\Assessment #2\\ChessMazeLevelDesigner\\test\\ChessMazeLevelDesignerTest.csproj",
+  "projectFilePath": "C:\\Users\\Jhutt\\Ara One Drive\\OneDrive - Ara Institute of Canterbury\\Year 3\\Semester 1\\BCDE222 C#\\BCDE222\\Assessments\\Assessment #2\\ChessMazeLevelDesigner\\test\\LevelDesignNSTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jhutt\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\Jhutt\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LevelDesignNS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
@@ -6,7 +7,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChessMazeLevelDesigner
+namespace LevelDesignNS
 {
     public class Board
     {
@@ -67,8 +68,8 @@ namespace ChessMazeLevelDesigner
 
         public void ClearStartTiles()
         {
-            
-            foreach(Tile tile in CurrentTiles)
+
+            foreach (Tile tile in CurrentTiles)
             {
                 if (tile.IsStart)
                 {
@@ -76,7 +77,6 @@ namespace ChessMazeLevelDesigner
                 }
             }
         }
-
 
         public void ClearEndTiles()
         {

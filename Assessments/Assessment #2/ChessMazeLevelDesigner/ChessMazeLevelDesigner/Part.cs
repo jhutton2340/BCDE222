@@ -1,6 +1,6 @@
 using System;
 
-namespace ChessMazeLevelDesigner
+namespace LevelDesignNS
 {
     public enum Part
     {

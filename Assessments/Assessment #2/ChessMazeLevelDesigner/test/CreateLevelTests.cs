@@ -1,4 +1,4 @@
-using ChessMazeLevelDesigner;
+using LevelDesignNS;
 
 namespace test
 {
@@ -57,7 +57,7 @@ namespace test
         }
 
         [TestMethod]
-        //Tests if the board is initialized correctly and the AddEmpty method works
+        //Tests if the board is initialized correctly and the AddEmpty method sets each tile to Part.Empty, PartColour.Null, IsStart = false, IsEndLocation = false
         public void TestMethod5()
         {
             var le = new LevelEditor();
@@ -68,14 +68,27 @@ namespace test
                 for(int column = 0; column < le.CurrentLevel.Height; column++)
                 {
                     Assert.AreEqual(Part.Empty, le.CurrentLevel.CurrentBoard.GetPart(row, column));
-                    
+                    Assert.AreEqual(PartColour.Null, le.CurrentLevel.CurrentBoard.GetPartColour(row, column));
                 }
             }
 
-            
+            foreach(Tile tile in le.CurrentLevel.CurrentBoard.CurrentTiles)
+            {
+                Assert.AreEqual(false, tile.IsStart);
+                Assert.AreEqual(false, tile.IsEndLocation);
+            }            
         }
-       
 
+        [TestMethod]
+        //Tests if the ChangeLevelName method works correctly
+        public void TestMethod6()
+        {
+            var le = new LevelEditor();
+            le.CreateLevel("Test", 5, 5);
+            le.ChangeLevelName("Test2");
+
+            Assert.AreEqual("Test2", le.CurrentLevel.Name);
+        }
 
     }
         

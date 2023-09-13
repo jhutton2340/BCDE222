@@ -1,10 +1,12 @@
-﻿using System;
+﻿using LevelDesignNS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChessMazeLevelDesigner { 
+namespace LevelDesignNS
+{
 
     public class Level : LevelEditor
     {
@@ -59,8 +61,7 @@ namespace ChessMazeLevelDesigner {
             }
         }
 
-    
-  
+       
     }
 }
 

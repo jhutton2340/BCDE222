@@ -1,7 +1,7 @@
-﻿using ChessMazeLevelDesigner;
+﻿using LevelDesignNS;
 using System;
 
-namespace ChessMazeLevelDesigner
+namespace LevelDesignNS
 {
     class Program
     {

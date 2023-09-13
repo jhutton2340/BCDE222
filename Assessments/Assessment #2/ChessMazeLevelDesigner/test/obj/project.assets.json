@@ -599,14 +599,14 @@
           }
         }
       },
-      "ChessMazeLevelDesigner/1.0.0": {
+      "LevelDesignNS/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
-          "bin/placeholder/ChessMazeLevelDesigner.dll": {}
+          "bin/placeholder/LevelDesignNS.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ChessMazeLevelDesigner.dll": {}
+          "bin/placeholder/LevelDesignNS.dll": {}
         }
       }
     }
@@ -2304,15 +2304,15 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "ChessMazeLevelDesigner/1.0.0": {
+    "LevelDesignNS/1.0.0": {
       "type": "project",
-      "path": "../ChessMazeLevelDesigner/ChessMazeLevelDesigner.csproj",
-      "msbuildProject": "../ChessMazeLevelDesigner/ChessMazeLevelDesigner.csproj"
+      "path": "../ChessMazeLevelDesigner/LevelDesignNS.csproj",
+      "msbuildProject": "../ChessMazeLevelDesigner/LevelDesignNS.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "ChessMazeLevelDesigner >= 1.0.0",
+      "LevelDesignNS >= 1.0.0",
       "MSTest.TestAdapter >= 2.2.10",
       "MSTest.TestFramework >= 2.2.10",
       "Microsoft.NET.Test.Sdk >= 17.6.0",
@@ -2326,9 +2326,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jhutt\\Ara One Drive\\OneDrive - Ara Institute of Canterbury\\Year 3\\Semester 1\\BCDE222 C#\\BCDE222\\Assessments\\Assessment #2\\ChessMazeLevelDesigner\\test\\ChessMazeLevelDesignerTest.csproj",
-      "projectName": "ChessMazeLevelDesignerTest",
-      "projectPath": "C:\\Users\\Jhutt\\Ara One Drive\\OneDrive - Ara Institute of Canterbury\\Year 3\\Semester 1\\BCDE222 C#\\BCDE222\\Assessments\\Assessment #2\\ChessMazeLevelDesigner\\test\\ChessMazeLevelDesignerTest.csproj",
+      "projectUniqueName": "C:\\Users\\Jhutt\\Ara One Drive\\OneDrive - Ara Institute of Canterbury\\Year 3\\Semester 1\\BCDE222 C#\\BCDE222\\Assessments\\Assessment #2\\ChessMazeLevelDesigner\\test\\LevelDesignNSTests.csproj",
+      "projectName": "LevelDesignNSTests",
+      "projectPath": "C:\\Users\\Jhutt\\Ara One Drive\\OneDrive - Ara Institute of Canterbury\\Year 3\\Semester 1\\BCDE222 C#\\BCDE222\\Assessments\\Assessment #2\\ChessMazeLevelDesigner\\test\\LevelDesignNSTests.csproj",
       "packagesPath": "C:\\Users\\Jhutt\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Jhutt\\Ara One Drive\\OneDrive - Ara Institute of Canterbury\\Year 3\\Semester 1\\BCDE222 C#\\BCDE222\\Assessments\\Assessment #2\\ChessMazeLevelDesigner\\test\\obj\\",
       "projectStyle": "PackageReference",
@@ -2351,8 +2351,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Jhutt\\Ara One Drive\\OneDrive - Ara Institute of Canterbury\\Year 3\\Semester 1\\BCDE222 C#\\BCDE222\\Assessments\\Assessment #2\\ChessMazeLevelDesigner\\ChessMazeLevelDesigner\\ChessMazeLevelDesigner.csproj": {
-              "projectPath": "C:\\Users\\Jhutt\\Ara One Drive\\OneDrive - Ara Institute of Canterbury\\Year 3\\Semester 1\\BCDE222 C#\\BCDE222\\Assessments\\Assessment #2\\ChessMazeLevelDesigner\\ChessMazeLevelDesigner\\ChessMazeLevelDesigner.csproj"
+            "C:\\Users\\Jhutt\\Ara One Drive\\OneDrive - Ara Institute of Canterbury\\Year 3\\Semester 1\\BCDE222 C#\\BCDE222\\Assessments\\Assessment #2\\ChessMazeLevelDesigner\\ChessMazeLevelDesigner\\LevelDesignNS.csproj": {
+              "projectPath": "C:\\Users\\Jhutt\\Ara One Drive\\OneDrive - Ara Institute of Canterbury\\Year 3\\Semester 1\\BCDE222 C#\\BCDE222\\Assessments\\Assessment #2\\ChessMazeLevelDesigner\\ChessMazeLevelDesigner\\LevelDesignNS.csproj"
             }
           }
         }

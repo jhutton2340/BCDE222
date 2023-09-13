@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Serialization.Formatters;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace ChessMazeLevelDesigner
+namespace LevelDesignNS
 {
     public class LevelEditor : ILevel
     {
@@ -61,7 +62,7 @@ namespace ChessMazeLevelDesigner
                 CurrentLevel.InitializeBoard();
             }
         }
-        public Tile CreateTile(Part part, PartColour colour)
+        public static Tile CreateTile(Part part, PartColour colour)
         {
             Tile tile = new()
             {
@@ -207,23 +208,11 @@ namespace ChessMazeLevelDesigner
             }
             else
             {
-                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnEmpty, PartColour.Null));
+                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnEmpty, GetPartColourAtIndex(gridX, gridY)));
             }
         
         }
 
-        public void AddPlayerOnEmpty(int gridX, int gridY, PartColour colour)
-        {
-            if(gridX < 0 || gridX > CurrentLevel.Width || gridY < 0 || gridY > CurrentLevel.Height)
-            {
-                throw new IndexOutOfRangeException();
-            }
-            else
-            {
-                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnEmpty, colour));
-            }
-       
-        }
 
         public void AddPlayerOnKing(int gridX, int gridY)
         {
@@ -233,20 +222,8 @@ namespace ChessMazeLevelDesigner
             }
             else
             {
-                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnKing, PartColour.Null));
-            }
-        
-        }
-
-        public void AddPlayerOnKing(int gridX, int gridY, PartColour colour)
-        {
-            if(gridX < 0 || gridX > CurrentLevel.Width || gridY < 0 || gridY > CurrentLevel.Height)
-            {
-                throw new IndexOutOfRangeException();
-            }
-            else
-            {
-                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnKing, colour));
+              
+                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnKing, GetPartColourAtIndex(gridX, gridY)));
             }
         
         }
@@ -259,22 +236,9 @@ namespace ChessMazeLevelDesigner
             }
             else 
             {
-                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnRook, PartColour.Null)); 
+                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnRook, GetPartColourAtIndex(gridX, gridY))); 
             }
         
-        }
-
-        public void AddPlayerOnRook(int gridX, int gridY, PartColour colour)
-        {
-            if (gridX < 0 || gridX > CurrentLevel.Width || gridY < 0 || gridY > CurrentLevel.Height)
-            {
-                throw new IndexOutOfRangeException();
-            }
-            else
-            {
-                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnRook, colour));
-            }
-            
         }
 
         public void AddPlayerOnBishop(int gridX, int gridY)
@@ -285,20 +249,7 @@ namespace ChessMazeLevelDesigner
             }
             else
             {
-                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnBishop, PartColour.Null));
-            }
-       
-        }
-
-        public void AddPlayerOnBishop(int gridX, int gridY, PartColour colour)
-        {
-            if(gridX < 0 || gridX > CurrentLevel.Width || gridY < 0 || gridY > CurrentLevel.Height)
-            {
-                throw new IndexOutOfRangeException();
-            }
-            else
-            {
-                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnBishop, colour));
+                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnBishop, GetPartColourAtIndex(gridX, gridY)));
             }
        
         }
@@ -312,20 +263,7 @@ namespace ChessMazeLevelDesigner
 
             else
             {
-                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnKnight, PartColour.Null));
-            }
-        
-        }
-
-        public void AddPlayerOnKnight(int gridX, int gridY, PartColour colour)
-        {   
-            if(gridX < 0 || gridX > CurrentLevel.Width || gridY < 0 || gridY > CurrentLevel.Height)
-            {
-                throw new IndexOutOfRangeException();
-            }
-            else
-            {
-                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnKnight, colour));
+                CurrentLevel.CurrentBoard.AddTile(gridX, gridY, CreateTile(Part.PlayerOnKnight, GetPartColourAtIndex(gridX, gridY)));
             }
         
         }
@@ -367,6 +305,20 @@ namespace ChessMazeLevelDesigner
 
         public bool CheckValid()
         {
+            var startTileCounter = 0;
+            var endTileCounter = 0;
+            foreach (var tile in CurrentLevel.CurrentBoard.CurrentTiles)
+            {
+                if (tile.IsStart)
+                {
+                    startTileCounter++;
+                }
+                else if (tile.IsEndLocation)
+                {
+                    endTileCounter++;
+                }
+            }
+
             if(CurrentLevel.Name == "")
             {
                 return false;
@@ -380,6 +332,14 @@ namespace ChessMazeLevelDesigner
                 return false;
             }
             else if(CurrentLevel.Width != CurrentLevel.Height)
+            {
+                return false;
+            }
+            else if(startTileCounter != 1)
+            {
+                return false;
+            }
+            else if(endTileCounter != 1)
             {
                 return false;
             }
